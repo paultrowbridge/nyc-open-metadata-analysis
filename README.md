@@ -1,0 +1,26 @@
+Packages used in R code
+-----------------------
+
+``` {.r}
+install.packages("htmlwidgets")
+## not always stable
+devtools::install_github('hadley/ggplot2')
+## will generate warning....
+install.packages("ggplot2")
+install.packages("RSocrata")
+install.packages("jsonlite")
+install.packages("plotly")
+# shouldn't need to explictly install this, but for completeness 
+install.packages("MASS")
+# to build the slides
+install.packages("knitr")
+install.packages("rmarkdown")
+```
+
+To obtain data, to reproduce analysis in slides
+-----------------------------------------------
+
+``` {.r}
+source("update_data.R")
+dat <- update_data()
+```
